@@ -3,6 +3,7 @@ module CiviCrm
     include ActiveModel::Validations
     include CiviCrm::Actions::Find
     include CiviCrm::Actions::Saveable
+    include CiviCrm::Actions::All
     include CiviCrm::Actions::Destroy
 
     def persisted?
@@ -125,6 +126,9 @@ module CiviCrm
   end
   class Membership < BaseResource
     entity :membership
+  end
+  class MembershipType < BaseResource
+    entity :membership_type
   end
   class Note < BaseResource
     entity :note

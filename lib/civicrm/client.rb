@@ -38,7 +38,7 @@ module CiviCrm
       def build_opts(method, params)
         opts = {
           method: method,
-          timeout: 80,
+          timeout: 160,
           headers: headers
         }
 

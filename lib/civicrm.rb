@@ -29,6 +29,7 @@ require 'civicrm/actions/update'
 require 'civicrm/actions/destroy'
 require 'civicrm/actions/find'
 require 'civicrm/actions/saveable'
+require 'civicrm/actions/all'
 
 # exceptions
 require 'civicrm/errors'
