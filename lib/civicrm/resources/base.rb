@@ -160,4 +160,7 @@ module CiviCrm
   class SurveyRespondant < BaseResource
     entity :survey_respondant
   end
+  class Website < BaseResource
+    entity :website
+  end
 end
