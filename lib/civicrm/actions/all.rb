@@ -3,7 +3,7 @@ module CiviCrm
     module All
       module ClassMethods
 
-        def all(row_count = 25)
+        def all(row_count = CiviCrm.default_row_count)
           CiviCrm::Actions::Relation.new(self).all(row_count)
         end
 
