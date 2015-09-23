@@ -5,6 +5,7 @@ module CiviCrm
     include CiviCrm::Actions::Saveable
     include CiviCrm::Actions::All
     include CiviCrm::Actions::Destroy
+    include CiviCrm::Actions::GetCount
 
     def persisted?
       id.present?

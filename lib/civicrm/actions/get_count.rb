@@ -7,7 +7,7 @@ module CiviCrm
         def get_count(attrs = {})
           params = {'entity' => entity_class_name, 'action' => 'getcount'}
           response = CiviCrm::Client.request(:get, params.merge(attrs))
-          self.build_from(response, params)
+          self.build_from(response, params).first
         end
       end
     end
